@@ -63,6 +63,8 @@ const router = new VueRouter({
 watchRouterPaths(router)
 ```
 
+![preview](preview.png)
+
 ## router.routes
 
 router.routes =  router.options.routes
