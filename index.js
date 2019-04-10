@@ -43,7 +43,6 @@ export default function watchRouterPaths(router) {
     const paths = []
     let parent = routes
 
-    console.log(to.matched)
     to.matched.forEach(item => {
       const children = parent[item.meta.index].children || []
       const path = {
@@ -90,7 +89,6 @@ export function mapTree(routes, parent) {
     }
   })
 }
-
 
 // @deprecated 获取属性当前路径，改为使用 $route.matched  to.matched
 function getPaths(matcheds, children) {

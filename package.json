@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/nicklin99/vue-router-paths",
   "eslintConfig": {
     "parserOptions": {
         "ecmaVersion": 7,
