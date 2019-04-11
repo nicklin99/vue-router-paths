@@ -111,3 +111,11 @@ cd examples/ant-design-vue-demo
 npm i
 vue serve main.js
 ```
+
+## 更新记录
+
+1. 1.1 fix meta.key为数字自增
+
+## 注意
+
+如果没有meta，也必须设置meta字段为{}

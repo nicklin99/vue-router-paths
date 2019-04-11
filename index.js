@@ -63,6 +63,7 @@ export default function watchRouterPaths(router) {
   })
 }
 
+let id = 1
 export function mapTree(routes, parent) {
   return routes.map((item, i) => {
     if (!item.meta) {
@@ -81,9 +82,14 @@ export function mapTree(routes, parent) {
       level++
       item.meta.level = level
     }
+    if (!item.meta.id) {
+      item.meta.key = id
+    } else {
+      item.meta.key = item.meta.id
+    }
     item.meta.display = !!item.meta.display
     item.meta.index = i
-    item.meta.key = `${item.meta.level}_${i}`
+    id++
     if (item.children) {
       mapTree(item.children, item)
     }
